@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int rollno,std,m1,m2,m3,m4,m5,tot,avg;
+    char name[20];
+    printf ("enter your rollno::");
+    scanf ("%d",&rollno);
+    printf ("enter your name::");
+    scanf ("%s",&name);
+    printf ("enter your standard::");
+    scanf ("%d",&std);
+    printf ("enter maths marks::");
+    scanf ("%d",&m1);
+    printf ("enter science marks::");
+    scanf ("%d",&m2);
+    printf ("enter english marks::");
+    scanf ("%d",&m3);
+    printf ("enter hindi marks::");
+    scanf ("%d",&m4);
+    printf ("enter computer marks::");
+    scanf ("%d",&m5);
+    tot = m1+m2+m3+m4+m5;
+    avg = tot/5;
+    printf (" total of 5 subjects::%d",tot);
+    printf ("\n avg is::%d",avg);
+    if(m1>=40&&m2>=40&&m3>=40&&m4>=40&&m5>=40)
+    {
+        if(avg>=90)
+        {
+        printf("\n grade A");
+        }
+        else if(avg>=80&&avg<90)
+        {
+        printf("\n grade B");
+        }
+        else if(avg>=70&&avg<80)
+        {
+        printf("\n grade C");
+        }
+        else if(avg>=60&&avg<70)
+        {
+        printf("\n grade D");
+        }
+        else if(avg>=40&&avg<60)
+        {
+        printf("\n grade E");
+        }
+        else
+        {
+        printf("\n fail");
+        }
+        return 0;
+    }
+}
